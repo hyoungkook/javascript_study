@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  <script>
+    function add() {
+      var counter=0;        // 지역변수이므로 함수의 실행이 시작되면 생겼다가 사라짐
+      return counter +=1;
+    }
+
+  </script>
+
+  </head>
+  <body>
+
+  <script>
+
+  document.write(add()+"<br>");   // 함수가 호촐될때마다 counter변수가 생겼다가 함수를 벗어나면 없어짐
+  document.write(add()+"<br>");
+  document.write(add()+"<br>");
+
+
+/*
+
+일반적으로 변수는 프로그램이 실행되는 동안 컴퓨터 메모리 내에 계속 존재하고, 프로그램의 실행이 끝나면 사라짐.
+그러나 함수를 사용할때는 약간 다른면이 있다.
+함수 내부에서 선언된 변수는 함수의 실행이 끝나면 사라지는데 이러한 변수를 지역변수라고 한다.
+반면 함수 외부에서 선언된 변수는 프로그램의 실행이 전부 끝나면 사라지는데 이러한 변수를 전역 변수라고 한다.
+
+*/
+
+  </script>
+
+  </body>
+</html>

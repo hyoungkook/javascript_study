@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  <script>
+
+  function cal(op,op1,op2){
+    if(op=="+") return op1+op2;
+    else if(op=="-") return op1-op2;
+    else if(op=="*") return op1*op2;
+    else return op1/op2;
+  }
+
+  </script>
+
+  </head>
+  <body>
+
+  <script>
+
+  var res;
+
+  res=cal("+",10,5);
+  document.write("op1+op2="+res+"<br>");
+
+  res=cal("-",10,5);
+  document.write("<br>op1-op2="+res+"<br>");
+
+  res=cal("*",10,5);
+  document.write("<br>op1*op2="+res+"<br>");
+
+  res=cal("/",10,5);
+  document.write("<br>op1/op2="+res);
+
+  </script>
+
+
+  </body>
+</html>

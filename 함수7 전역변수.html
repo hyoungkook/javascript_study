@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  <script>
+
+    var counter=0            // 함수외부에서 선언된 전역변수. 프로그램의 실행이 끝나면 사라짐
+    function add() {
+      return counter +=1;
+    }
+
+  </script>
+
+  </head>
+  <body>
+
+  <script>
+
+  document.write(add()+"<br>"); // 변수가 함수외부에서 실행되면 변수가 증가된걸 계속 기억하고 가는구나
+  document.write(add()+"<br>");
+  document.write(add()+"<br>");
+
+  </script>
+
+  </body>
+</html>

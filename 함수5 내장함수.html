@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+    var num ="abc";
+    if(isNaN(num))         // isNaN()  은 인수가 숫자가 아니면 true, 숫자면 false를 반환한다.
+      document.write("num은 문자를 기억합니다.");
+
+    else
+      document.write("num은 숫자를 기억합니다.");
+
+    num="4";
+    document.write("<br>num+1=");
+    document.write(parseInt(num)+1);  // parseInt() 정수문자를 정수로 변환
+
+    num="4.5";
+    document.write("<br>num+1=");
+    document.write(parseFloat(num)+1);  // parseFloat() 실수문자를 실수로 변환
+
+    num="3+3+3";
+    document.write("<br>3+3+3=");
+    document.write(eval(num));     // eval() 문자열로 구성된 식을 계산하여 결과를 돌려줌
+
+    </script>
+
+  </body>
+</html>

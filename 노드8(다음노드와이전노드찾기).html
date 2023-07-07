@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h3>버튼을 클릭하면 다음노드와 이전 노드가 표시됩니다.</h3>
+
+  <select id="selectList" size="4"><option id="item1">빨간사과</<option><option id="item2">노란바나나</<option><option id="item3">블루베리</<option><option id="item4">청포도</<option>
+  </select><br><br>
+
+  <button onclick="selectFunc()">클릭하세요</button>
+
+  <p id="here1"></p>
+  <p id="here2"></p>
+
+  <script>
+
+  function selectFunc(){
+  var x=document.getElementById("item2").nextSibling.innerHTML; // 드롭박스 항목중 id가 item2인 항목의 다음항목의 내용을 변수 x에 저장
+  document.getElementById("here1").innerHTML=x;    // 변수x의 값을 id가 here1인 노드의 내용으로 지정
+  var x=document.getElementById("item2").previousSibling.innerHTML; // 드롭박스 항목중 id가 item인 항목의 이전항목의 내용을 변수 x에 저장
+  document.getElementById("here2").innerHTML=x;    // 변수x의 값을 id가 here2인 노드의 내용으로 지정
+}
+
+// DOM트리에서 특정 노드의 다음 노드를 찾기 위해서는 nextSibling 프로퍼티를 사용하고,
+// 이전 노드를 찾기 위해서는 previousSibling 프로퍼티를 사용한다. 
+
+
+  </script>
+
+
+  </body>
+</html>

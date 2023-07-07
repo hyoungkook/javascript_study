@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+    var secret=7;
+    var count=0;
+    var guess;                                            // 키보드로 사용자가 입력하는 값을 저장하는 변수이므로 초기값이 필요없음
+
+    while (guess!=secret) {                               // 입력값과 secret변수 값이 같은지를 검사해서 같지 않으면 아래 명령문 블록이 실행됨.
+      guess=prompt("1-10 사이의 숫자를 입력하세요!");
+      document.write("입력한 값 : "+guess);
+      document.write("<br>");
+      count++;
+    }
+    document.write(count+"번만에 맞혔습니다~!");           // secret변수 값을 맞추면 while블록을 벗어나 이 라인이 실행됨.
+
+
+
+    console.log('A');
+    console.log('B');
+
+    var i = 0;
+    while(i < 1){
+    console.log('C1');
+    console.log('C2');
+    i = i + 1;
+    }
+    console.log('D');
+
+/* while (조건식){
+     조건식이 '참' 인동안 반복 실행될 명령문들;
+   }
+
+*/
+  </script>
+
+  </body>
+</html>

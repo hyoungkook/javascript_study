@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+
+  <script>
+
+  function hap(op1,op2){
+    return op1+op2;             //실행된 덧셈값이 함수를 호출한 곳으로 되돌려짐
+    }
+
+  function gop(op1,op2){
+    var imsi=op1*op2;           // 연산결과값을 imsi 라는 변수에 저장
+    return imsi;                // imsi변수의 값을 함수를 호출한 곳으로 돌려줌
+  }                             // 이렇게 return문에 식이 아닌 변수, 상수를 기술해도 됨
+
+  </script>
+
+  </head>
+  <body>
+
+  <script>
+
+  var res;
+  res=hap(10,20);                 // return문에 의해 덧셈의 결과값이 되돌려져서 res변수에 저장됨
+  document.write(res+"<br>");
+
+  res=gop(10,20);                 // imsi변수값이 res변수에 할당됨
+  document.write(res);
+
+  </script>
+
+  </body>
+</html>

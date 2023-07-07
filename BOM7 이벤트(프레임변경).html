@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body onload="count()">
+  <h3>body태그에 onload이벤트가 지정되어 이문서가 로드되면 제일먼저 count()함수가 실행됨</h3>
+
+  <button onclick="first()">itkyohak</button>
+  <button onclick="second()">kyohaksa</button> 두개의 버튼을 표시하고 각 버튼에 각각first()와 second()이벤트 지정
+  <br><br>
+
+  <iframe src="https://blog.naver.com/itkyohak"></iframe>
+  <iframe src="https://www.kyohak.co.kr"></iframe>
+
+  <script>
+
+  function count(){
+    var cnt=window.length; //length프로퍼티를 사용해서 프레임 개수를 표시
+    alert("프레임개수 :"+cnt);
+  }
+
+  function first(){
+    window.frames[0].location="https://www.daum.net";
+  }
+
+  function second(){
+    window.frames[1].location="https://www.daum.net";
+  }
+
+
+  </script>
+
+
+
+
+
+
+  </body>
+</html>

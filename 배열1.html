@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+  var arr=[10,20,30,40,50];
+  document.write(arr[0]+"<br>");
+  document.write(arr[1]+"<br>");
+  document.write(arr[2]+"<br>");
+  document.write(arr[3]+"<br>");
+  document.write(arr[4]+"<br>");
+
+  document.write("<br>for문으로 출력<br>");
+
+  for(var i=0; i<=4; i++) {
+    document.write("<br>");
+    document.write(arr[i]);
+  }
+
+/*
+변수는 1개의 값을 기억하나, 배열은 여러개의 값을 기억하는 특수한 변수.
+배열내의 값들은 순서 번호인 인덱스로 구분.
+배열은 아래 형식으로 사용함 
+
+var 배열이름 = [값1,값2,...];
+
+*/
+
+  var arr = ['A','B','C','D']; // 배열을 생성 (배열 선언)
+  console.log(arr[1]);         // 배열 내용 호출
+  console.log(arr[3]);         // 배열 내용 호출
+  arr[2] = 3;                  // 배열 내용 수정
+  console.log(arr);            // 배열 내용 출력
+  console.log(arr.length);     // 배열 내용 갯수 출력
+  arr.push('E');               // 배열 내용 추가
+  console.log(arr);            // 배열 내용 출력
+
+  // 이외에도 배열의 맨처음에 내용을 추가하거나, 내용을 빼거나
+  // 맨뒤에 내용을 추가하거나 빼거나, 중간의 어떤값을 버리거나 낑겨넣거나
+  // 또는 정렬상태를 바꾸거나 등등 여러가지가 있음.
+
+  </script>
+
+  </body>
+</html>

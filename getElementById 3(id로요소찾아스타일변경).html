@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h1 id="sample">환영합니다!</h1>
+
+  <p>버튼을 클릭하면 위의 제목의 색이 바뀝니다.</p>
+  <button onclick="changeTitle()">클릭하세요</button>
+
+  <script>
+
+  function changeTitle(){
+    var x=document.getElementById("sample");   //id가 sample인 요소를 가져와 변수 x에 저장
+    x.style.color="blue";                      // style프로퍼티는 "style.css프로퍼티" 형식으로 사용하며 해당 요소의 스타일을 지정함
+  }
+
+  </script>
+
+  </body>
+</html>

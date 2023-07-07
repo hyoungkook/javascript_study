@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+  var sale={                       // 프로퍼티만 있는 객체 만들기 (객체선언)
+    product:"phone",               // 변수는 한개의 값만을 저장할 수 있으나 객체는 여러개의 값을 저장할 수 있다
+    count:"5",
+    price:"500000"
+  };
+
+  document.write("상품:"+sale.product+"<br>");
+  document.write("수량:"+sale.count+"<br>");
+  document.write("가격:"+sale.price+"<br>");
+
+  document.write("<br>");
+
+  document.write("상품:"+sale["product"]+"<br>");
+  document.write("수량:"+sale["count"]+"<br>");
+  document.write("가격:"+sale["price"]+"<br>");
+
+// 프로퍼티만 있는 객체는 아래와 같은 형식으로 만든다.
+// var 객체명 : {프로퍼티1:값1, 프로퍼티2:값2,...};
+
+  </script>
+
+  </body>
+</html>

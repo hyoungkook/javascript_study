@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h3>환영합니다!</h3>
+  <h3>어서오세요!</h3>
+  <h3>반갑습니다!</h3>
+
+  <p id="here"></p>
+
+  <script>
+
+  var x=document.getElementsByTagName("h3");   //태그이름이 h3인 요소들을 찾아 배열 x에 저장
+  document.getElementById("here").innerHTML=   //here이라는 id를 가진 요소의 내용을 지정
+  "첫번째 제목 :"+x[0].innerHTML;               //x배열내의 첫번째 내용(인덱스0)을 요소의 내용으로 지정
+
+  </script>
+
+
+
+
+  </body>
+</html>

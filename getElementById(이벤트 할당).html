@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <p>버튼을 클릭하면 메시지가 표시됩니다.</p>
+
+  <button id="btn">클릭하세요</button>
+
+  <p id="here"></p>
+
+  <script>
+
+  document.getElementById("btn").onclick=msgFunc; //id로 button요소를 찾은후 onclick프로퍼티로 msgFunc함수를 지정
+
+  function msgFunc(){
+    document.getElementById("here").innerHTML="버튼을 클릭했습니다!"; //함수가 실행됨
+  }
+
+  </script>
+
+
+
+
+
+
+  </body>
+</html>

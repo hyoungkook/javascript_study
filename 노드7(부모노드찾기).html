@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h3>버튼을 클릭하면 드롭박스의 부모노드가 표시됩니다.</h3>
+
+  <select id="selectList" size="4"><option id="item1">빨간사과</<option><option id="item2">노란바나나</<option><option id="item3">블루베리</<option><option id="item4">청포도</<option>
+  </select><br><br>
+
+  <button onclick="selectFunc()">클릭하세요</button>
+
+  <p id="here"></p>
+
+  <script>
+
+  function selectFunc(){
+  var x=document.getElementById("selectList").parentNode.nodeName; // 드롭박스의 부모노드의 이름을 변수 x에 할당
+  document.getElementById("here").innerHTML=x;    // 변수의 값을 id가 here인 노드의 내용으로 지정
+}
+
+// DOM 트리에서 특정 노드의 부모노드를 찾기 위해서는 parentNode프로퍼티를 사용 
+
+  </script>
+
+
+  </body>
+</html>

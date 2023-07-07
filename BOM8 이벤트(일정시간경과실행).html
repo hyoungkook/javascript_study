@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h3>버튼을 클릭하면 5초후에 알림상자가 표시됩니다.<h3>
+    버튼에 onclick이벤트가 지정되어 버튼을 클릭하면 alertBox()함수가 실행된다<br><br>
+
+  <button onclick="alertBox()">클릭하세요</button>
+
+  <script>
+
+  function alertBox(){
+    setTimeout(function(){alert("5초가 지났습니다!");},2000);
+  }
+
+// setTimeout 메소드를 실행한다. 이 메소드의 첫번째 인수는 함수이며, 두번째 인수는 시간.
+// 그래서 이 메소드가 실행되면 첫번째 인수로 지정된 함수가 5초후에 실행된다
+
+
+  </script>
+
+
+
+  </body>
+</html>

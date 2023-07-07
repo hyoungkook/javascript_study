@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h3 class="greeting1">환영합니다!</h3>
+    <h3 class="greeting2">어서오세요!</h3>
+    <p>반갑습니다!</p>
+    <b>안녕하세요</b>
+
+  <br><br>
+
+  <button onclick="changeFunc1()">1번버튼</button>
+  <button onclick="changeFunc2()">2번버튼</button>
+  <button onclick="changeFunc3()">3번버튼</button>
+
+  <script>
+
+  function changeFunc1(){
+    var x=document.querySelectorAll("h3.greeting1"); // css선택자를 사용하여 요소를 지정
+    var i;
+
+    for(i=0; i<x.length; i++){               // 배열의 크기만큼 반복. length프로퍼티는 배열의 크기 값 3. 따라서 i변수는 0, 1, 2
+      x[i].style.backgroundColor="yellow";
+    }
+  }
+
+  function changeFunc2(){
+    var x=document.querySelectorAll("h3.greeting2"); // css선택자를 사용하여 요소를 지정
+    var i;
+
+    for(i=0; i<x.length; i++){               // 배열의 크기만큼 반복. length프로퍼티는 배열의 크기 값 3. 따라서 i변수는 0, 1, 2
+      x[i].style.backgroundColor="red";
+    }
+  }
+
+  function changeFunc3(){
+    var x=document.querySelectorAll("p,b");  // 여러 개의 태그 이름을 사용하여 요소를 지정
+    var i;
+
+    for(i=0; i<x.length; i++){               // 배열의 크기만큼 반복. length프로퍼티는 배열의 크기 값 3. 따라서 i변수는 0, 1, 2
+      x[i].style.backgroundColor="pink";
+    }
+  }
+
+
+// querySelectorAll() 메소드를 사용하면 css선택자, 태그 이름, 클래스 이름, id, 속성, 속성 값등 다양한 기준으로 요소를 찾을 수 있어 편리.
+// 이 메소드도 찾은 요소를 배열로 반환함.
+
+
+
+
+  </script>
+
+
+
+
+  </body>
+</html>

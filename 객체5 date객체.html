@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+    var date_obj=new Date(); // Date객체는 new로 새로운 객체를 생성해서 사용한다
+
+    document.write(date_obj);
+    document.write("<br>");
+
+    document.write(Date()); // 현재의 날짜 정보를 출력만 하려면 함수형식처럼 Date()를 기술.
+    document.write("<br>");
+
+    document.write(date_obj.toUTCString()); // 현재 날짜를 표시하는 다양한 메소드
+    document.write("<br>");
+
+    document.write(date_obj.toLocaleString()); // 현재 날짜를 표시하는 다양한 메소드
+    document.write("<br>");
+
+    document.write(date_obj.toDateString()); // 현재 날짜를 표시하는 다양한 메소드
+
+  </script>
+
+  </body>
+</html>

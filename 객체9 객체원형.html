@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+  function sale(product, count, price) {  // sale이라는 생성자함수(붕어빵 틀) 선언
+    this.product=product;                 // 생성자 함수에서 프로퍼티를 정의할때는 'this.프로퍼티이름' 형식으로 기술. this는 함수원형을 정의할때 사용하며 새로운 객체를 만들면 this는 새로운 객체이름으로 대체됨.
+    this.count=count;                     // this는 '이 함수 원형에 의해 만들어질 객체이름' 이라는 의미를 가짐.
+    this.price=price;
+    this.pay=function(){
+             return this.count*this.price;
+        }
+    };
+
+  var sale1=new sale("phone", 3, 500000);          // 생성자 함수를 이용해서 sale1이라는 새로운 객체를 생성
+  document.write("상품 :"+ sale1.product+"<br>");   // sale1객체의 프로퍼티를 사용
+  document.write("수량 :"+ sale1.count+"<br>");
+  document.write("가격 :"+ sale1.price+"<br>");
+  document.write("금액 :"+ sale1.pay()+"<br>");
+
+  document.write("<br>");
+
+  var sale2=new sale("tablet", 2, 800000);
+  document.write("상품 :"+ sale2.product+"<br>");
+  document.write("수량 :"+ sale2.count+"<br>");
+  document.write("가격 :"+ sale2.price+"<br>");
+  document.write("금액 :"+ sale2.pay());
+
+  </script>
+
+  </body>
+</html>

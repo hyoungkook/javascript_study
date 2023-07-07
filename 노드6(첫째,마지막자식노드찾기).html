@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h3>버튼을 클릭하면 드롭박스의 크기와 자식 노드가 표시됩니다.</h3>
+
+  <select id="selectList" size="4"><option>빨간사과</<option><option>노란바나나</<option><option>블루베리</<option><option>청포도</<option>
+  </select><br><br>
+
+  <button onclick="selectFunc()">클릭하세요</button>
+
+  <p id="here1"></p>
+  <p id="here2"></p>
+
+  <script>
+
+  function selectFunc(){
+  var c=document.getElementById("selectList").firstChild.innerHTML; // 드롭박스의 첫번째 자식노드의 내용을 변수에 할당
+  document.getElementById("here1").innerHTML=c;    // 변수의 값을 id가 here1인 노드의 내용으로 지정
+
+  c=document.getElementById("selectList").lastChild.innerHTML; // 드롭박스의 마지막 자식노드의 내용을 변수에 할당
+  document.getElementById("here2").innerHTML=c;    // 변수의 값을 id가 here2인 노드의 내용으로 지정
+
+}
+
+// DOM트리에서 특정 노드의 첫번째 자식 노드를 찾기 위해서는 firstChild프로퍼티를 사용.
+// DOM트리에서 특정 노드의 마지막 자식 노드를 찾기 위해서는 lastChild프로퍼티를 사용.
+
+  </script>
+
+
+  </body>
+</html>

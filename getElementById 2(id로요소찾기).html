@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h1 id="sample">환영합니다!</h1>
+
+  <p>버튼을 클릭하면 버튼 아래에 문장이 표시됩니다.</p>
+  <button onclick="copyPara()">클릭하세요</button>
+
+  <p id="here"></p>
+
+  <script>
+
+  function copyPara(){
+    var x=document.getElementById("sample").innerHTML; //id가 sample인 요소를 가져와 변수 x에 저장
+    document.getElementById("here").innerHTML=x;       // here이라는 id가 지정된 요소의 내용으로 변수 x를 지정.
+  }
+
+  </script>
+
+  </body>
+</html>
